@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="6dp"
+    android:layout_height="6dp"
+             android:layout_centerVertical="true"
+    android:background="@drawable/home_radio"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:button="@null">
+</RadioButton>

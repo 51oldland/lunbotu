@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    tools:context="com.www.lunbo.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/CompleteHome_vp_relayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_loading_home_banner"></android.support.v4.view.ViewPager>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"></RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wwwwww"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/CompleteHome_vp_relayout"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/img_toutiao"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/shouye_gaozhaotoutiao" />
+
+        <com.www.lunbo.view.UPMarqueeView
+            android:id="@+id/upMarqueeView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img_toutiao"></com.www.lunbo.view.UPMarqueeView>
+    </RelativeLayout>
+
+    <com.www.lunbo.view.TextSwitchView
+        android:id="@+id/tsv11111"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/wwwwww"></com.www.lunbo.view.TextSwitchView>
+    <com.www.lunbo.view.AutoTextView
+        android:id="@+id/autoTextView"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+    </com.www.lunbo.view.AutoTextView>
+</RelativeLayout>
